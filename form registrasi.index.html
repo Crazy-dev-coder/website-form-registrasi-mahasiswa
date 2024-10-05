@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="url"], input[type="file"], select {
+            width: 100%;
+            padding: 6px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Form Registrasi Mahasiswa</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+    <table border="1">
+        <tr>
+            <th colspan="2">Biodata Mahasiswa</th>
+        </tr>
+        <tr>
+            <td>Nama Mahasiswa:</td>
+            <td><input type="text" name="nama_mahasiswa" required></td>
+        </tr>
+        <tr>
+            <td>No. Induk Mahasiswa:</td>
+            <td><input type="text" name="nim" required></td>
+        </tr>
+        <tr>
+            <td>Alamat Mahasiswa:</td>
+            <td><input type="text" name="alamat_mahasiswa" required></td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir:</td>
+            <td><input type="date" name="tanggal_lahir" required></td>
+        </tr>
+        <tr>
+            <td>Jenis Kelamin:</td>
+            <td>
+                <select name="jenis_kelamin" required>
+                    <option value="">Pilih</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Upload Foto:</td>
+            <td><input type="file" name="foto_mahasiswa" accept="image/*" required></td>
+        </tr>
+        <tr>
+            <td>URL Website:</td>
+            <td><input type="url" name="url_website" placeholder="https://contoh.com"></td>
+        </tr>
+        <tr>
+            <td>Perguruan Tinggi:</td>
+            <td><input type="text" name="perguruan_tinggi" required></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Info Akun</th>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required></td>
+        </tr>
+        <tr>
+            <td>Username:</td>
+            <td><input type="text" name="username" required></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" required></td>
+        </tr>
+        <tr>
+            <td>Ulangi Password:</td>
+            <td><input type="password" name="ulang_password" required></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Kemampuan Dasar</th>
+        </tr>
+        <tr>
+            <td>HTML:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="HTML"> HTML</td>
+        </tr>
+        <tr>
+            <td>CSS:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="CSS"> CSS</td>
+        </tr>
+        <tr>
+            <td>JavaScript:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="JavaScript"> JavaScript</td>
+        </tr>
+        <tr>
+            <td>PHP:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="PHP"> PHP</td>
+        </tr>
+        <tr>
+            <td>MySQL:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="MySQL"> MySQL</td>
+        </tr>
+        <tr>
+            <td>Laravel:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="Laravel"> Laravel</td>
+        </tr>
+        <tr>
+            <td>React Native:</td>
+            <td><input type="checkbox" name="kemampuan[]" value="React Native"> React Native</td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Simpan">
+    <input type="reset" value="Reset">
+</form>
+
+</body>
+</html>
